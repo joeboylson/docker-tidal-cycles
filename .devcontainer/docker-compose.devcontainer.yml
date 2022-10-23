@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+
+  tidal:
+    init: true
+    image: tidal
+    container_name: tidal
+    build:
+      context: ../
+      dockerfile: ./.devcontainer/Dockerfile
+    volumes:
+      - ../:/workspace
+    restart: "no"
+    stdin_open: true

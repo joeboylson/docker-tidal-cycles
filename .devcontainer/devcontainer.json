@@ -1,0 +1,23 @@
+{
+  "name": "tidal",
+  "workspaceFolder": "/workspace",
+  "dockerComposeFile": "./docker-compose.devcontainer.yml",
+  "service": "tidal",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "jatinchowdhury18.vscode-supercollider",
+        "tidalcycles.vscode-tidalcycles",
+        "hoovercj.haskell-linter",
+        "justusadam.language-haskell"
+      ],
+      "settings": {
+        "files.associations": {
+          "*.tidal": "haskell"
+        }
+      }
+    }
+  },
+  "runArgs": ["--name", "tidal"],
+  "remoteUser": "tidal"
+}

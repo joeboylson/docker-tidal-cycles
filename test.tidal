@@ -1,0 +1,11 @@
+-- a bass drum
+d1 $ s "bd ~ bd ~"
+
+-- high-hat pattern
+d2 $ s "[~ hh]*2"
+
+-- 1.. 1.. 1.. 1..
+d3 $ s "numbers:1"
+
+-- clap
+d4 $ s "cp cp cp"
